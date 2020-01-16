@@ -11,7 +11,8 @@ const setupInput = function(conn) {
         if (handleUserInput === 'w' ) conn.write('Move: up'); 
         if (handleUserInput === 'a' ) conn.write('Move: left'); 
         if (handleUserInput === 'd' ) conn.write('Move: right'); 
-        if (handleUserInput === 's' ) conn.write('Move: down');   
+        if (handleUserInput === 's' ) conn.write('Move: down');
+        if (handleUserInput === 'p' ) conn.write('Say: Hello');      
         if (handleUserInput === '\u0003') {
         process.exit();
       }
